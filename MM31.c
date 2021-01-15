@@ -11,7 +11,7 @@ int main()
     {
         int num;
         scanf("%d",&num);
-        for (int counter_one = 1;counter_one <= num;counter_one++)
+        for (int counter_one = 1;counter_one <= num;counter_one++)  //相乘
             fac *= counter_one;
         ans[counter] = fac;
         fac = 1;
