@@ -12,10 +12,10 @@ int main()
         {
             if (isalpha(input[counter]))    //確認是否為字母
             {
-                if ((input[counter]>='A' && ((input[counter] + 13) <= 'Z')) || (input[counter] >= 'a' && ((input[counter] + 13) <= 'z')))   //如果該字母在轉換後仍是字母(在ASCIIASCII
-                    printf("%c",input[counter] + 13);
+                if ((input[counter]>='A' && ((input[counter] + 13) <= 'Z')) || (input[counter] >= 'a' && ((input[counter] + 13) <= 'z')))   //如果該字母在轉換後仍是字母
+                    printf("%c",input[counter] + 13);   //'A'跟'N'中間差了13
                 else
-                    printf("%c",input[counter] + 13 - 26);
+                    printf("%c",input[counter] + 13 - 26);		//減去26使其仍表示字母
             }
             else
                 printf("%c",input[counter]);
