@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int cmp(const void *a,const void *b)
+int cmp(const void *a,const void *b)    //用於qsort的比較函式
 {
     return (*(int *)a - *(int *)b);
 }
