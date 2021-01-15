@@ -2,7 +2,7 @@
 
 int main()
 {
-    long long int perfect[7] =
+    long long int perfect[7] =  //先將perfect number準備好
     {
         6, 28, 496,
         8128, 33550336,
@@ -12,8 +12,9 @@ int main()
     int num;
     scanf("%d",&num);
 
-    for (int counter = 0;counter < 7;counter++)
-        if (perfect[counter] < num)
+    //印出所有小於num的perfect number
+    for (int counter = 0;counter < 7;counter++) 
+        if (perfect[counter] < num) 
             printf("%d\n",perfect[counter]);
 
     return 0;
