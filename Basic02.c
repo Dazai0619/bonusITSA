@@ -7,7 +7,7 @@ int main()
     while (scanf("%d",&mile) != EOF)
     {
         double km;
-        km = mile * 1.6;
+        km = mile * 1.6;    //1英哩=1.6公里
         printf("%.1lf\n",km);
     }
     return 0;
