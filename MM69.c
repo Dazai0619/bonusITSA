@@ -4,10 +4,12 @@ int main()
 {
     float height,weight;
     scanf("%f %f",&height,&weight);
-    height = height / 100;
+    height = height / 100;  //輸入為公分，需換算為公尺
     float bmi;
-    bmi = weight / (height * height);
+    bmi = weight / (height * height);   //計算BMI值
     printf("%.1f ",bmi);
+    
+    //印出與BMI相對應的結果
     if (bmi < 18.5)
         printf("underweight\n");
     else if (bmi < 24)
