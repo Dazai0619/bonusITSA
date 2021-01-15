@@ -18,12 +18,12 @@ int main()
             scanf("%s",input);
             len = strlen(input);
             for (counter = 0;counter < len;counter++)
-                temp[counter] = (input[counter] - '0');
+                temp[counter] = (input[counter] - '0'); //將input的每個數字從字元轉換成數字
             for (counter = 0;counter < len;counter++)
-                num |= (temp[counter] << (len - 1 - counter));
-            sum += num;
+                num |= (temp[counter] << (len - 1 - counter));  //以位元運算(OR)來做加總，index是counter的數字實際上是第(len - 1 - counter)位數，所以做左移的動作
+            sum += num; //將求得的數字加總
         }
-        printf("%d\n",sum);
+        printf("%d\n",sum); //印出答案
     }
     return 0;
 }
