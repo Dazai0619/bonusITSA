@@ -6,12 +6,12 @@
 
 #define MAX 10000
 
-int gcd(int a,int b)
+int gcd(int a,int b)    //求a、b最大公因數
 {
-    if (a % b == 0)
+    if (a % b == 0) //若a可整除b
         return b;
     else
-        return gcd(b,(a % b));
+        return gcd(b,(a % b));  
 }
 
 int main()
@@ -25,12 +25,12 @@ int main()
         while (num--)
         {
             scanf("%d",&input);
-            if (max < input)
-                max = input;
-            if (min > input)
-                min = input;
+            if (max < input)    //若input大於目前最大值
+                max = input;    //替換最大值
+            if (min > input)    //若input小於目前最小值
+                min = input;    //替換最小值
         }
-        printf("%d\n",gcd(max,min));
+        printf("%d\n",gcd(max,min));    //得max跟min的最大公因數
     }
     return 0;
 }
