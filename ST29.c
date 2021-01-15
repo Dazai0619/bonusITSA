@@ -12,20 +12,22 @@ int main()
 
         for (count = 0; count < strlen(input);count++)
         {
-            if (input[count] >= '0' && input[count] <= '9')
+            if (input[count] >= '0' && input[count] <= '9') //如果是數字
             {
-                num[num_counter++] = input[count];
-                num[num_counter] = '\0';
+                num[num_counter++] = input[count];  //放入num中
+                num[num_counter] = '\0';    //字串結束
             }
-            else
+            else    //如果是字母
             {
-                output[output_counter++] = input[count];
-                output[output_counter] = '\0';
-                if ((input[count+1] >= '0' && input[count+1] <= '9') || input[count+1] == '\0')
+                output[output_counter++] = input[count];    //放入output中
+                output[output_counter] = '\0';  //字串結束
+                if ((input[count+1] >= '0' && input[count+1] <= '9') || input[count+1] == '\0') //如果input[count]下一個是數字或是字串結束
                 {
-                    counter = atoi(num);
+                    counter = atoi(num);    //將num轉成整數存至counter裡
                     while (counter--)
-                        printf("%s",output);
+                        printf("%s",output);    //印出counter個output
+                    
+                    //計數器歸零
                     num_counter = 0;
                     output_counter = 0;
                 }
