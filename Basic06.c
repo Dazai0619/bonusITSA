@@ -4,9 +4,9 @@
 int main()
 {
     int month;
-    while (scanf("%d",&month) != EOF)
+    while (scanf("%d",&month) != EOF)   
     {
-        if ((month >= 3) && (month <= 5))
+        if ((month >= 3) && (month <= 5))   
             printf("Spring\n");
         else if ((month >= 6) && (month <= 8))
             printf("Summer\n");
