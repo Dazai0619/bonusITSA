@@ -10,7 +10,7 @@ int main()
 
     char output[1000];
     for(int counter = 0;counter < len;counter++)
-        output[counter] = input[counter] - 3;
+        output[counter] = input[counter] - 3;   //將每個字母decode
     for(int counter = 0;counter < len;counter++)
         printf("%c",output[counter]);
 
